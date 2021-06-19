@@ -1,0 +1,526 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+/*reset*/
+* {margin:0; padding: 0;}
+a {color: inherit; text-decoration: none;}
+li {list-style: none;}
+
+
+/*layout*/
+/*공통*/
+body {
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.inner .tit {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/*header*/
+header.trans {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    opacity: 0.7;
+}
+
+/*scroll 효과*/
+header {
+    width: 100%;
+    position: fixed;
+    background-color: none;
+    z-index: 1;
+}
+
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    align-items: center;
+}
+
+header .inner .main_logo {
+    font-family: 'LuloCleanW01-OneBold';
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: -3px;
+}
+
+header .inner .menu {
+    display: flex;
+    align-items: center;
+}
+
+header .inner .menu li {
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+header .inner .menu li:last-child {
+    padding-left: 20px;
+    font-size: 23px;
+}
+
+header .inner .menu li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*banner*/
+.banner {
+    width: 100%;
+    padding-bottom: 600px;
+    background: url(/img/banner01.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.banner .inner {
+    position: relative;
+}
+
+.banner .inner .banner_txt {
+    position: absolute;
+    top: 170px;
+    color: white;
+    line-height: 1.3;
+    letter-spacing: 1px;
+}
+
+.banner .inner .banner_txt .bannerTit {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.banner .inner .banner_txt .btn {
+    width: 150px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: black;
+    opacity: 0.65;
+    border-radius: 50px;
+}
+
+.banner .inner .banner_txt .btn a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*products*/
+.products {
+    width: 100%;
+}
+
+.products .inner .prd_list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.products .inner .prd_list li {
+    text-align: center;
+}
+
+.products .inner .prd_list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.products .inner .prd_list li a .prd_img{
+    position: relative;
+}
+
+.products .inner .prd_list li a img {
+    width: 100%;
+}
+
+.products .inner .prd_list li a img:hover {
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.products .inner .prd_list li a .prd_img .box_org {
+    color: white;
+    background: #fe6161;
+    padding: 2px 7px;
+    position: absolute;
+    bottom: 5px;
+}
+
+.products .inner .prd_list li a .prd_name {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    color: silver;
+    font-weight: 500;
+}
+
+.products .inner .prd_list li a p {
+    font-weight: bold;
+}
+
+.products .inner .prd_list li a .prd_price_red {
+    color: red;
+}
+.products .inner .prd_list li a .prd_price_red i {
+    font-size: small;
+    padding-right: 10px;
+}
+
+.products .inner .prd_list li a .prd_img .box_blue {
+    color: white;
+    background: #5db0f5;
+    padding: 2px 7px;
+    position: absolute;
+    bottom: 5px;
+}
+
+.products .inner .prd_list li a .prd_img .cut {
+    height: 276px;
+}
+
+.products .inner .prd_list li a .prd_img .box_purple {
+    color: white;
+    background: #ad72e8;
+    padding: 2px 7px;
+    position: absolute;
+    bottom: 5px;
+}
+
+/*Recent Project*/
+.RecProject {
+    width: 100%;
+    background-color: #f7f7fe;
+    padding-bottom: 80px;
+}
+
+.RecProject .inner .total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.RecProject .inner .total .list_left .list_top a {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    margin: 0 30px 40px 0;
+    padding-right: 30px;
+    background-color: white;
+}
+
+.RecProject .inner .total .list_top a .img01 {
+    width: 100%;
+    padding-right: 50px;
+}
+
+.RecProject .inner .total .list_top a .img01 img {
+    width: 480px;
+}
+
+.RecProject .inner .total .list_left .list_top a .img_txt {
+    padding-right: 40px;
+}
+
+.RecProject .inner .total .list_left .list_top a .img_txt .date {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 40px;
+    font-size: 12px;
+}
+
+.RecProject .inner .total .list_left .list_top a .img_txt .date img {
+    margin-right: 10px;
+}
+
+.RecProject .inner .total .list_left .list_top a .img_txt .tit {
+    text-align: left;
+    font-size: 20px;
+    padding: 10px 0;
+    letter-spacing: -0.2px;
+}
+
+.RecProject .inner .total .list_left .list_top a .img_txt .txt {
+    padding-bottom: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.7;
+    color: #a8a8a8;
+    border-bottom: 1px solid silver;
+}
+
+.RecProject .inner .total .list_left .list_top a .img_txt .view {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    font-size: 13px;
+    color: #a8a8a8;
+}
+
+.RecProject .inner .total .list_left .list_top a .img_txt .view i,
+.RecProject .inner .total .list_left .list_bottom .BlackMon a .view .heart i {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.RecProject .inner .total .list_left .list_bottom {
+    display: flex;
+    padding-right: 30px;
+    justify-content: space-between;
+}
+
+.RecProject .inner .total .list_left .list_bottom .BlackMon a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: 1px solid silver;
+    background-color: white;
+}
+
+.RecProject .inner .total .list_left .list_bottom .BlackMon a .img02 {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.RecProject .inner .total .list_left .list_bottom .BlackMon a .img02 img {
+    width: 100%;
+}
+
+.RecProject .inner .total .list_left .list_bottom .BlackMon a .s_tit {
+    box-sizing: border-box;
+    height: 70px;
+    text-align: left;
+    margin: 25px 25px 0 25px;
+    border-bottom: 1px solid silver;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.RecProject .inner .total .list_left .list_bottom .BlackMon a .s_tit:hover,
+.RecProject .inner .total .list_left .list_top a .img_txt .tit:hover {
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+
+.RecProject .inner .total .list_left .list_bottom .BlackMon a .view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 25px;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: 600;
+    color: #a8a8a8;
+}
+
+.RecProject .inner .total .list_right {
+    position: relative;
+}
+
+.RecProject .inner .total .list_right .longimg {
+    width: 100%;
+    position: relative;
+}
+
+.RecProject .inner .total .list_right .longimg img{
+    border: 1px solid silver;
+}
+
+.RecProject .inner .total .list_right .longimg_txt {
+    position: absolute;
+    top: 14%;
+    transform: translate(20%, 50%);
+    text-align: center;
+}
+
+.RecProject .inner .total .list_right .longimg_txt .longimg_tit{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.RecProject .inner .total .list_right .longimg_txt .longimg_s_tit{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.RecProject .inner .total .list_right .longimg_txt .longimg_txt02 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.RecProject .inner .total .list_right .longimg a {
+    display: block;
+    position: absolute;
+    top: 42%;
+    left: 43%;
+    font-size: 40px;
+    color: #888;
+}
+
+.RecProject .inner .total .list_right .longimg a.mouseEnter {
+    display: block;
+    position: absolute;
+    top: 41%;
+    left: 42%;
+    color: #5aada7;
+    font-size: 55px;
+    transform: rotate(360deg);
+    transition: 0.7s;
+}
+
+.RecProject .inner .total .list_right .longimg a.mouseLeave {
+    animation-name: moveItem;
+    animation-duration: 0.7s;
+    animation-iteration-count: initial;
+}
+
+@keyframes moveItem {
+    0% {transform: translateY(40px); opacity: 0;}
+    30% {transform: translateY(30px); opacity: 0.3;}
+    60% {transform: translateY(20px); opacity: 0.6;}
+    80% {transform: translateY(10px); opacity: 1;}
+}
+
+/*section.videos*/
+.video {
+    width: 100%;
+}
+
+.video .inner .hotNews {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.video .inner .hotNews i {
+    font-size: 20px;
+    margin-right: 25px;
+}
+
+.video .inner .hotNews .s_tit {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.video .inner .videoTotal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video .inner .videoTotal li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.video .inner .videoTotal li a .video_img {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.video .inner .videoTotal li a .video_img img {
+    width: 570px;
+    height: 325px;
+}
+
+.video .inner .videoTotal li a .video_img i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: white;
+}
+
+.video .inner .videoTotal li a .txtBox {
+    width: 86%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;    
+}
+.video .inner .videoTotal li a .txtBox:hover {
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+
+.video .inner .videoTotal li a .txtBox .s_tit {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.video .inner .videoTotal li a .txtBox .videoTit {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.video .inner .videoTotal li a .txtBox .txt {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/*section.Artwork*/
+.artworks {
+    width: 100%;
+}
+
+.artworks .inner .artworksList{
+    display: flex;
+    justify-content: space-between;
+}
+
+.artworks .inner .artworksList li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.artworks .inner .artworksList li a .img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.artworks .inner .artworksList li a .img img{
+    width: 100%;
+}
+
+.artworks .inner .artworksList li a .img img:hover{
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.artworks .inner .artworksList li a p:last-child {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
