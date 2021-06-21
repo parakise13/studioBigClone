@@ -37,3 +37,4 @@ function plusWheel() {
 window.addEventListener('scroll', transHeader);
 plusBtn.addEventListener('mouseenter', plusGone);
 plusBtn.addEventListener('mouseleave', plusWheel);
+
